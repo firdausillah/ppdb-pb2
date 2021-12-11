@@ -27,18 +27,20 @@ class Home extends CI_Controller {
 
 	public function save(){
 		// tahun
-		$date = date('Y');
+		$year = date('y');
+		$month = date('m');
 
 		// nomor urut
 		$nourut = $this->mSiswa->cekUrut();
-		$urut = sprintf("%04s", $nourut + 1);
+		$urut = sprintf("%03s", $nourut + 1);
 
 		// gelombang
 		$getGelombang =  $this->mGelombang->findBy($_POST['id_gel'])->row();
 		$gelombang = $getGelombang->gelombang;
 		
 		// kode = PPDB.tahun.nomor urut.gelombang
-		$kode = 'PPDB'.$date.$urut.$gelombang;
+		$kode = 'REG' . $month . $year. $urut . $gelombang;
+		// print_r($kode); exit();
 		
 		$data = [
 			'nama'	=> $this->input->post('nama'),

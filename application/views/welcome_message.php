@@ -147,7 +147,7 @@
 				<path fill="#A7B7CB" fill-opacity="1" d="M0,96L80,112C160,128,320,160,480,154.7C640,149,800,107,960,101.3C1120,96,1280,128,1360,144L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
 			</svg>
 
-			<section id="alur" class="alur">
+			<!-- <section id="alur" class="alur">
 				<div class="container py-5">
 					<div class="row justify-content-center">
 						<div class="col-sm-8">
@@ -159,12 +159,12 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
-			<svg class="d-none d-md-block d-sm-none" style="margin-top: -150px; margin-bottom: -30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<!-- <svg class="d-none d-md-block d-sm-none" style="margin-top: -150px; margin-bottom: -30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path fill="#a7b7cb" fill-opacity="1" d="M0,224L480,192L960,224L1440,160L1440,320L960,320L480,320L0,320Z"></path>
-			</svg>
-			<section id="contact" class="contact">
+			</svg> -->
+			<section id="contact" class="contact mt-5">
 				<div class="container">
 					<div class="row justify-content-beetwen">
 						<div class="col-sm-6">
@@ -178,7 +178,7 @@
 					<div class="row text-dark">
 						<div class="col-sm-12 col-md-5 text-left">
 							<p class="mb-0">
-								Copyright &copy; <?= date('Y') ?> PPDB SMK GRISA
+								Copyright &copy; <?= date('Y') ?> PPDB SMK PUSPA BANGSA 2
 								<!-- <a href="<?= base_url() ?>assets/index.html" class="text-dark"><strong>AdminKit Demo</strong></a> &copy; -->
 							</p>
 						</div>
