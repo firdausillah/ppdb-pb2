@@ -1,7 +1,7 @@
 <nav id="sidebar" class="sidebar">
     <div class="sidebar-content js-simplebar">
         <a class="sidebar-brand text-center" href="<?= base_url() ?>assets/index.html">
-            <span class="align-middle">SMK PGRI PESANGGARAN</span>
+            <span class="align-middle">SMK PUSPA BANGSA 2</span>
         </a>
 
         <ul class="sidebar-nav">
