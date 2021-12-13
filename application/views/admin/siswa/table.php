@@ -17,9 +17,10 @@
                                     <th>No</th>
                                     <th class="text-midle">Kode pendaftaran</th>
                                     <th class="text-midle">Nama Pendaftar</th>
-                                    <th class="d-none d-xl-table-cell">Pembawa</th>
+                                    <th class="text-midle">Tanggal Pendaftaran</th>
+                                    <!-- <th class="d-none d-xl-table-cell">Pembawa</th> -->
                                     <th class="text-midle">Status</th>
-                                    <th class="text-midle">Daftar Ulang</th>
+                                    <!-- <th class="text-midle">Daftar Ulang</th> -->
                                     <th class="text-midle">Asal Sekolah</th>
                                     <th class="text-midle">Action</th>
                                 </tr>
@@ -30,7 +31,8 @@
                                         <td><?= $no + 1; ?></td>
                                         <td><?= $s->kode_pendaftaran ?></td>
                                         <td><?= $s->nama ?></td>
-                                        <td class="d-none d-xl-table-cell"><?= $s->pembawa ?></td>
+                                        <td><?php $date = date_create($s->tgl_daftar); echo date_format($date, "d F Y"); ?></td>
+                                        <!-- <td class="d-none d-xl-table-cell"><?= $s->pembawa ?></td> -->
                                         <td>
                                             <!-- <a href="" class="tombol-validasi" data-toggle="modal" data-target=".bd-example-modal-sm" data-idsis="<?= $s->id ?>"> -->
                                             <!-- <a href="#<?= $s->status ?>" class="tombol-validasi" data-toggle="modal" data-target=".bd-example-modal-sm" data-idsis="<?= $s->status ?>"> -->
@@ -41,7 +43,7 @@
                                             <?php endif ?>
                                             <!-- </a> -->
                                         </td>
-                                        <td>Rp<?= $s->daftar_ulang ?? number_format($s->daftar_ulang, 2, ',', '.') ?></td>
+                                        <!-- <td>Rp<?= $s->daftar_ulang ?? number_format($s->daftar_ulang, 2, ',', '.') ?></td> -->
                                         <td><?= $s->nama_asal_sekolah ?></td>
                                         <td>
                                             <a href="<?= base_url() ?>cetak/bukti/<?= $s->kode_pendaftaran ?>" target='_blank' class="btn btn-success btn-sm"><i class="fa fa-print"></i></a>
