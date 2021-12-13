@@ -178,7 +178,7 @@
 					<div class="row text-dark">
 						<div class="col-sm-12 col-md-5 text-left">
 							<p class="mb-0">
-								Copyright &copy; <?= date('Y') ?> PPDB SMK PUSPA BANGSA 2
+								Copyright &copy; <?= date('Y') ?> PPDB <?= $profile->nama_sekolah ?>
 								<!-- <a href="<?= base_url() ?>assets/index.html" class="text-dark"><strong>AdminKit Demo</strong></a> &copy; -->
 							</p>
 						</div>
@@ -206,7 +206,7 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Form Pendaftaran Siswa Baru <br> SMK PGRI PESANGGARAN</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Form Pendaftaran Siswa Baru <br> <?= $profile->nama_sekolah ?></h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
