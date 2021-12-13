@@ -90,7 +90,7 @@ class Auth extends CI_Controller
 
 			$data_siswa = $this->mAuth->cekLogin('tb_siswa', $where)->row();
 
-			print_r($data_siswa->nama);
+			// print_r($data_siswa->nama);
 			$data_session = [
 				'id' => $data_siswa->id,
 				'nama' => $data_siswa->nama,
