@@ -18,6 +18,7 @@
                                     <th class="text-midle">Kode pendaftaran</th>
                                     <th class="text-midle">Nama Pendaftar</th>
                                     <th class="text-midle">Tanggal Pendaftaran</th>
+                                    <th class="text-midle">Jurusan</th>
                                     <!-- <th class="d-none d-xl-table-cell">Pembawa</th> -->
                                     <th class="text-midle">Status</th>
                                     <!-- <th class="text-midle">Daftar Ulang</th> -->
@@ -32,6 +33,7 @@
                                         <td><?= $s->kode_pendaftaran ?></td>
                                         <td><?= $s->nama ?></td>
                                         <td><?php $date = date_create($s->tgl_daftar); echo date_format($date, "d F Y"); ?></td>
+                                        <td><?= $s->jurusan ?></td>
                                         <!-- <td class="d-none d-xl-table-cell"><?= $s->pembawa ?></td> -->
                                         <td>
                                             <!-- <a href="" class="tombol-validasi" data-toggle="modal" data-target=".bd-example-modal-sm" data-idsis="<?= $s->id ?>"> -->
